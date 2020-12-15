@@ -1,0 +1,10 @@
+<h1>投稿一覧</h1>
+
+  <% @lists.each do |list| %>
+    <%= list.title %>
+    <br><br>
+    <%= list.body %>
+    <br><br>
+    <%= attachment_image_tag list, :image, :fill, 100, 100, format: 'jpeg' %>
+    <br><br><br>
+  <% end %>
